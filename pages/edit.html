@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit</title>
+    <link rel="stylesheet" href="../node_modules/normalize.css/normalize.css" />
+  </head>
+  <body>
+    <header>
+      <a href="../index.html">
+        <img
+          src="../img/multimedia/branding/logo_light_horizontal.svg"
+          alt="logotipo de funkoshop"
+        />
+      </a>
+      <nav>
+        <ul>
+          <li><a href="shop.html">VER TIENDA</a></li>
+          <li><a href="admin.html">ADMIN</a></li>
+          <li><a href="#">SALIR</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <form action="">
+        <h2>EDITAR ITEM</h2>
+        <div>
+          <label for="categoria">Categoria</label>
+          <select name="categoria" id="categoria">
+            <option value="figuras" selected>Figuras</option>
+          </select>
+          <label for="licencia">Licencia</label>
+          <select name="licencia" id="licencia">
+            <option value="naruto-shippuden" selected>Naruto Shippuden</option>
+          </select>
+        </div>
+        <div>
+          <label for="nombre-producto">Nombre del producto:</label>
+          <input
+            type="text"
+            name="nombre-producto"
+            id="nombre-producto"
+            placeholder="Kakashi Hatake Shippuden Saga"
+            size="29"
+          />
+        </div>
+        <textarea
+          name="descripcion-producto"
+          id="descripcion-producto"
+          cols="50"
+          rows="10"
+          placeholder="Descripcion del producto"
+        >Figura Funko coleccionable de Kakashi Hatake de la saga Naruto Shipudden invocando chidori.</textarea>
+        <div>
+          <label for="sku">SKU</label>
+          <input type="text" name="sku" id="sku" placeholder="NAR001012"/>
+          <label for="precio">Precio</label>
+          <input
+            type="text"
+            name="precio"
+            id="precio"
+            placeholder="$ 1.799,00"
+          />
+          <label for="stock">Stock</label>
+          <input type="number" name="stock" id="stock" placeholder="10" />
+        </div>
+        <div>
+          <label for="descuento">Descuento</label>
+          <input type="text" name="descuento" id="descuento" placeholder="10%"/>
+          <label for="cuotas">Coutas</label>
+          <select name="cuotas" id="cuotas">
+            <option value="cuotas-3">3 Cuotas sin interes</option>
+            <option value="cuotas-6" selected>6 Cuotas sin interes</option>
+            <option value="cuotas-12">12 Cuotas sin interes</option>
+          </select>
+        </div>
+        <div>
+          <label for="imagenes">Imagenes:</label>
+          <input type="file" />
+        </div>
+        <div>
+          <picture>
+            <img src="../img/multimedia/naruto/kakashi_hatake_front.svg" alt="">
+            <h3>Frente</h3>
+          </picture>
+          <picture>
+            <img src="../img/multimedia/naruto/kakashi_hatake_back.svg" alt="">
+            <h3>Dorso</h3>
+          </picture>
+        </div>
+        <button type="button">Modificar Producto</button>
+      </form>
+    </main>
+
+    <footer>
+      <nav>
+        <ul>
+          <li><a href="shop.html">SHOP</a></li>
+          <li><a href="register.html">REGISTRARSE</a></li>
+          <li><a href="login.html">INGRESAR</a></li>
+          <li><a href="contacto.html">CONTACTO</a></li>
+        </ul>
+        <picture
+          ><img
+            src="../img/multimedia/branding/isotype.svg"
+            alt="Isotipo de la marca Funkoshop"
+        /></picture>
+      </nav>
+      <p>All rights reserved 2023 - Funkoshop &copy;</p>
+    </footer>
+  </body>
+</html>
